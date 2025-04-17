@@ -10,5 +10,5 @@ COPY . /app
 # Construye la aplicación usando Maven
 RUN mvn clean install -DskipTests
 
-# Define el comando para ejecutar la aplicación
+# Define el comando para ejecutar la aplicación.
 CMD ["java", "-jar", "target/*.jar"]
